@@ -1,6 +1,6 @@
 {
-	"name": "@klippa/nativescript-login",
-	"version": "4.0.4",
+	"name": "@kajicom/nativescript-login",
+	"version": "4.0.0-beta.1",
 	"description": "The best way to do social logins in NativeScript, a plugin with modern SDKs to allow authentication to various providers with access to all SDK features",
 	"main": "login",
 	"typings": "index.d.ts",
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/klippa-app/nativescript-login.git"
+		"url": "https://github.com/kajicom/nativescript-login.git"
 	},
 	"scripts": {
 		"tsc": "yarn install && ts-patch install && tspc",
@@ -28,7 +28,7 @@
 		"demo-angular.ios": "yarn install && cd ../demo-angular && tns run ios",
 		"demo-angular.android": "yarn install && cd ../demo-angular && tns run android",
 		"demo-angular.reset": "cd ../demo-angular && npx rimraf -- hooks node_modules platforms package-lock.json",
-		"plugin.prepare": "yarn run build && cd ../demo && tns plugin remove @klippa/nativescript-login && tns plugin add ../src && cd ../demo-angular && tns plugin remove @klippa/nativescript-login && tns plugin add ../src",
+		"plugin.prepare": "yarn run build && cd ../demo && tns plugin remove @kajicom/nativescript-login && tns plugin add ../src && cd ../demo-angular && tns plugin remove @kajicom/nativescript-login && tns plugin add ../src",
 		"clean": "yarn run demo.reset && yarn run demo-angular.reset && npx rimraf -- node_modules package-lock.json && yarn install",
 		"ngcc": "node --max-old-space-size=8192 ./node_modules/.bin/ngcc -p es2015",
 		"ngc": "node --max-old-space-size=8192 ./node_modules/.bin/ngc"
@@ -44,10 +44,10 @@
 		"email": "jeroen@klippa.com"
 	},
 	"bugs": {
-		"url": "https://github.com/klippa-app/nativescript-login/issues"
+		"url": "https://github.com/kajicom/nativescript-login/issues"
 	},
 	"license": "MIT",
-	"homepage": "https://github.com/klippa-app/nativescript-login",
+	"homepage": "https://github.com/kajicom/nativescript-login",
 	"devDependencies": {
 		"@angular/common": "~19.2.0",
 		"@angular/compiler": "~19.2.0",

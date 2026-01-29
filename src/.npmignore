@@ -1,5 +1,4 @@
 *.map
-*.ts
 !index.d.ts
 !login.android.d.ts
 !login.common.d.ts
